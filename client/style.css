@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+body {
+  background: #181818;
+}
+
+#app {
+  width: 100vw;
+  height: 80px;
+  background: #181818;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#chat_container {
+  flex: 1;
+  width: 100%;
+  height: 90%;
+  overflow-y: scroll;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  scroll-behavior: smooth;
+}
+
+/* hides scrollbar */
+#chat_container::-webkit-scrollbar {
+  display: none;
+}
+
+#divider {
+  width: 100%;
+  height: 100px;
+  color: #181818;
+}
+
+.wrapper {
+  width: 95%;
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid #30363d;
+  align-self: center;
+}
+
+.ai {
+  background: #222222;
+}
+
+.chat {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.profile {
+  width: 36px;
+  height: 36px;
+  border-radius: 5px;
+
+  background: #5436DA;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ai .profile {
+  background: #10a37f;
+}
+
+.profile img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
+.message {
+  flex: 1;
+
+  color: #dcdcdc;
+  font-size: 20px;
+  font-weight: 18px;
+
+  max-width: 100%;
+  overflow-x: scroll;
+
+  /*
+   * white space refers to any spaces, tabs, or newline characters that are used to format the CSS code
+   * specifies how white space within an element should be handled. It is similar to the "pre" value, which tells the browser to treat all white space as significant and to preserve it exactly as it appears in the source code.
+   * The pre-wrap value allows the browser to wrap long lines of text onto multiple lines if necessary.
+   * The default value for the white-space property in CSS is "normal". This tells the browser to collapse multiple white space characters into a single space, and to wrap text onto multiple lines as needed to fit within its container.
+  */
+  white-space: pre-wrap; 
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* hides scrollbar */
+.message::-webkit-scrollbar {
+  display: none;
+}
+
+form {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+#submit_box{
+
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  background: #222222;
+  padding-bottom: max(2rem,env(safe-area-inset-bottom));
+  border-top: 1px solid #30363d;
+  position:fixed;
+  bottom:0;
+
+}
+
+textarea {
+
+  padding: 9px;
+  background: #181818;
+  border-radius: 12px;
+  font-size: 18px;
+  outline: none;
+  font-weight: 700;
+  width: 100%;
+  position: relative;
+  top: 1px;
+  resize: none;
+  color: #bfbfbf;
+  
+}
+
+
+button {
+  outline: none;
+  padding: 0.75em;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 800;
+  display: inline-block;
+  border: 2px solid #7ADDB6;
+  background-color: #7ADDB6;
+  color: #fff;
+}
+
+form img {
+  width: 30px;
+  height: 30px;
+}
+
+#nav_bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background: #7ADDB6;
+  border-bottom: 1px solid #30363d;
+
+  font-weight: 800;
+  font-size: 18px;
+  color: #fff;
+  line-height: 4em;
+  text-align: center;
+}
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AITutor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+  <div id="nav_bar">This is a navigation bar</div>
+
+  <div id="app"></div>
+  <div id="chat_container"></div>
+  <script>
+    chat_container.scrollTop = chat_container.scrollHeight
+  </script>
+
+  <div id = "divider"></div>
+
+  <div id = submit_box>
+
+    <form>
+      <textarea name="prompt" rows="1" cols="1" placeholder="Ask anything..."></textarea>
+      <button type="submit"> Submit </button>
+    </form>
+    <script type="module" src="/script.js"></script>
+
+  </div>
+</body>
+
+</html>
